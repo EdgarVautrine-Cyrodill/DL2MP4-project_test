@@ -24,7 +24,7 @@ Project ini dibuat untuk pengguna yang akan mengunduh video favorite dari platfo
   - 1080p
   - 720p
   - 480p
-- Output MP4 (bukan WebM)
+- Output MP4
 - Menggunakan **yt-dlp + FFmpeg**
 
 ### 📄 DOCX to PDF Converter (Experimental)
@@ -43,7 +43,7 @@ Project ini dibuat untuk pengguna yang akan mengunduh video favorite dari platfo
 - **FFmpeg**
 - **python-docx**
 - **ReportLab**
-- **HTML, CSS, JavaScript (Frontend)**
+- **HTML, CSS, JavaScript**
 
 ---
 
