@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>DL2MP4 - Video & Document Converter</title>
+
+<link rel="icon" href="{{ url_for('static', filename='favicon.png') }}">
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+
+<style>
+.converter-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(2, 142, 236, 0.15);
+    margin-bottom: 40px;
+}
+
+.converter-box h3 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.converter-box p {
+    color: #555555;
+}
+
+.converter-box select,
+.converter-box input {
+    margin-bottom: 10px;
+}
+
+.converter-box button {
+    width: 100%;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.converter-box button:hover {
+    background: #5563d1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">DL2MP4</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="jumbotron text-center" style="margin-top:60px;">
+  <div class="container">
+    <h1>DL2MP4</h1>
+    <p>
+      Website gratis untuk <strong>mengunduh video YouTube</strong>  
+      serta <strong>mengubah file Word (.docx) menjadi PDF</strong>  
+      dengan mudah, cepat, dan aman.
+    </p>
+  </div>
+</section>
+
+<!-- CONVERTER -->
+<div class="container">
+
+  <!-- VIDEO CONVERTER -->
+  <div class="converter-box">
+    <h3>Convert Video YouTube ke MP4 atau MP3</h3>
+    <p>
+      Masukkan link YouTube, pilih format dan resolusi video yang kamu inginkan.
+    </p>
+
+    <form method="POST" action="/download">
+      <div class="row">
+        <div class="col-md-4">
+          <select name="format" class="form-control">
+            <option value="mp4">MP4 (Video)</option>
+            <option value="mp3">MP3 (Audio)</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <select name="resolution" class="form-control">
+            <option value="auto">Auto</option>
+            <option value="360">360p</option>
+            <option value="480">480p</option>
+            <option value="720">720p</option>
+            <option value="1080">1080p</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <input type="text" name="url" class="form-control"
+                 placeholder="https://youtube.com/..." required>
+        </div>
+      </div>
+
+      <br>
+      <button type="submit">Download Sekarang</button>
+    </form>
+  </div>
+
+  <!-- DOCX TO PDF -->
+  <div class="converter-box">
+    <h3>Convert Word ke PDF</h3>
+    <p>
+      Unggah file Word (.docx) dan sistem akan mengubahnya menjadi file PDF.
+    </p>
+
+    <form action="/docx-to-pdf" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" class="form-control" accept=".docx" required>
+      <br>
+      <button type="submit">Convert ke PDF</button>
+    </form>
+
+    <p id="docxResult" style="margin-top:10px;"></p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center" style="padding:20px;background:#222;color:#aaa;">
+  <p>
+    © 2025 DL2MP4  
+    <br>
+    Website ini dibuat untuk tujuan edukasi dan penggunaan pribadi.
+  </p>
+</footer>
+
+<script src="{{ url_for('static', filename='js/jquery-1.11.0.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+
+</body>
+</html>
