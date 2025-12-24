@@ -78,18 +78,18 @@ Pastikan path FFmpeg sesuai di app.py:
 
 ```python
 ffmpeg_location = r'C:\ffmpeg\bin'
-
+```
 
 ---
 
 ## 4️⃣ Jalankan Aplikasi
-
+```python
 python app.py
-
+```
 Buka browser:
-
+```Firefox, Chrome, Edge, Opera, Brave, LibreWolf, Waterfox, Floorp
 http://127.0.0.1:5000
-
+```
 
 ---
 
