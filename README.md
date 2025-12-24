@@ -151,6 +151,6 @@ Gunakan koneksi internet stabil saat download video
 
 
 ---
-📌 Lisensi
+## 📌 Lisensi
 
 Project ini dibuat untuk keperluan edukasi dan pembelajaran.
