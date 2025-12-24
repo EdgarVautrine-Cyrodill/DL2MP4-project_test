@@ -11,6 +11,9 @@ Project ini dibuat untuk pengguna yang akan mengunduh video favorite dari platfo
 
 ## 🚀 Fitur Utama
 1. Mengunduh Video dari berbagai website (Youtube, Facebook, Instagram)
+2. Pilihan MP3
+3. MP4 Support resolusi (Memilih AUTO akan mengakitbatkan video yang diunduh menjadi UHD.)
+4. Convert .docx ke .pdf
 ### 🎬 Video Download
 - Download video dari YouTube
 - Pilihan format:
@@ -46,7 +49,17 @@ Project ini dibuat untuk pengguna yang akan mengunduh video favorite dari platfo
 
 ## 📂 Struktur Folder Project
 
-project/ │ ├── app.py ├── requirements.txt │ ├── templates/ │   └── index.html │ ├── static/ │   ├── css/ │   └── js/ │ ├── downloads/     # hasil video / audio ├── uploads/       # file DOCX ├── converted/     # hasil PDF
+project/ │ 
+├── app.py 
+├── requirements.txt │ 
+├── templates/ │   
+  └── index.html │
+├── static/ │   
+├── css/ │   
+└── js/ │ 
+├── downloads/  # hasil video / audio 
+├── uploads/  # file DOCX 
+├── converted/  # hasil PDF
 
 ---
 
@@ -54,10 +67,12 @@ project/ │ ├── app.py ├── requirements.txt │ ├── templates
 
 ### 1️⃣ Clone / Extract Project
 ```bash
-git clone <repository-url>
-
-atau extract file ZIP.
+git clone https://github.com/EdgarVautrine-Cyrodill/DL2MP4-project_test
+git pull
 ```
+Atau extract file ZIP:
+1. Klik <> Code
+2. Download ZIP
 
 ---
 
@@ -95,60 +110,47 @@ http://127.0.0.1:5000
 
 ## 🔁 Alur Kerja Aplikasi
 
-Video Downloader
+**Video Downloader**
 
-1. User memasukkan URL video
+1. User memasukkan URL video.
 
+2. (MP4) Memilih resolusi.
 
-2. Memilih format & resolusi
+3. Data dikirim ke backend (/download).
 
+4. yt-dlp & ffmpeg memproses video.
 
-3. Data dikirim ke backend (/download)
-
-
-4. yt-dlp memproses video
-
-
-5. File disimpan ke folder downloads
+5. File disimpan ke folder downloads.
 
 
 
-DOCX to PDF
+**DOCX to PDF**
 
 1. User upload file .docx
 
-
 2. File disimpan di uploads
-
 
 3. Dibaca menggunakan python-docx
 
-
 4. PDF dibuat menggunakan ReportLab
 
-
 5. File PDF disimpan di converted
-
-
 
 
 ---
 
 ## ❗ Catatan Penting
 
-Pastikan FFmpeg sudah ter-install
+Pastikan **FFmpeg** sudah ter-install
 
 Jika hasil download berupa .webm, pastikan:
 
-Format dipaksa mp4
-
-Resolusi diproses di backend
-
+Format dipaksa mp4 & Resolusi diproses di backend
 
 Gunakan koneksi internet stabil saat download video
 
 
-
+---
 📌 Lisensi
 
 Project ini dibuat untuk keperluan edukasi dan pembelajaran.
