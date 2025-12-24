@@ -48,19 +48,19 @@ Project ini dibuat untuk pengguna yang akan mengunduh video favorite dari platfo
 ---
 
 ## 📂 Struktur Folder Project
-
+```
 project/ │ 
 ├── app.py 
 ├── requirements.txt │ 
 ├── templates/ │   
   └── index.html │
-├── static/ │   
-├── css/ │   
-└── js/ │ 
+  ├── static/ │   
+  ├── css/ │   
+  └── js/ │ 
 ├── downloads/  # hasil video / audio 
 ├── uploads/  # file DOCX 
 ├── converted/  # hasil PDF
-
+```
 ---
 
 ## ⚙️ Instalasi & Menjalankan Project
