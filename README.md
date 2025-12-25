@@ -7,6 +7,12 @@ DL2MP4 adalah website yang berbasis **Flask (Python)** yang menyediakan fitur:
 
 Project ini dibuat untuk pengguna yang akan mengunduh video favorite dari platform terkenal dan menyimpannya secara offline.
 
+## IMPORTANT!
+Sebelum di run, pastikan
+1. Menginstal Flask di Virtual Environtment-mu, Mengabaikan ini akan error.
+2. Install "ffmpeg-(version)-essenstial" di drive C:/ atau PATH.
+3. Pastikan struktur folder sesuai dengan REPO ini!
+
 ---
 
 ## 🚀 Fitur Utama
