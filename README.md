@@ -84,31 +84,33 @@ Atau extract file ZIP:
 
 ## 2️⃣ Install Dependency
 ```python
-pip install flask yt-dlp python-docx reportlab
+pip install flask
+pip install yt-dlp
+pip install python-docx
+pip install reportlab
 ```
 
+Anda juga bisa memakai Choco jika tidak menggunakan PIP.
 ---
 
 ## 3️⃣ Install FFmpeg
 
 Download FFmpeg (Windows)
 
-Extract
-
-Pastikan path FFmpeg sesuai di app.py:
+Extract dan Pastikan path FFmpeg sesuai di app.py:
 
 ```python
 ffmpeg_location = r'C:\ffmpeg\bin'
 ```
-
+atau simpan di C:
 ---
 
 ## 4️⃣ Jalankan Aplikasi
 ```python
 python app.py
 ```
-Buka browser:
-```Firefox, Chrome, Edge, Opera, Brave, LibreWolf, Waterfox, Floorp
+Buka browser: (Firefox, Chrome, Edge, Opera, Brave, LibreWolf, Waterfox, Floorp)
+```
 http://127.0.0.1:5000
 ```
 
