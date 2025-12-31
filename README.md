@@ -98,11 +98,12 @@ Anda juga bisa memakai Choco jika tidak menggunakan PIP.
 Download FFmpeg (Windows)
 
 Extract dan Pastikan path FFmpeg sesuai di app.py:
+Atau simpan di C: (Khusus yang "ffmpeg-(version)-essenstial")
 
 ```python
 ffmpeg_location = r'C:\ffmpeg\bin'
 ```
-atau simpan di C:
+
 ---
 
 ## 4️⃣ Jalankan Aplikasi
