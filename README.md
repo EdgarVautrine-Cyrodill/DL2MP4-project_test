@@ -132,6 +132,16 @@ http://127.0.0.1:5000
 5. File disimpan ke folder downloads.
 
 
+**Music Downloader**
+
+1. User memasukkan URL video.
+
+2. Data dikirim ke backend (/download).
+
+3. yt-dlp & ffmpeg memproses video.
+
+4. File disimpan ke folder downloads.
+
 
 **DOCX to PDF**
 
